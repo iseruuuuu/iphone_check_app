@@ -44,7 +44,13 @@ class RootScreen extends StatelessWidget {
               size: 35.0,
               color: Colors.black,
             ),
-            title: Text('Home'),
+            title: Text(
+              '端末情報',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -57,7 +63,13 @@ class RootScreen extends StatelessWidget {
               size: 35.0,
               color: Colors.black,
             ),
-            title: Text('Jail Break'),
+            title: Text(
+              '脱獄チェッカー',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -70,7 +82,13 @@ class RootScreen extends StatelessWidget {
               size: 35.0,
               color: Colors.black,
             ),
-            title: Text('Wifi Speed'),
+            title: Text(
+              'Wifi Speed',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         ],
       ),

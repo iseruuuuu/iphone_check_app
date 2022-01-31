@@ -1,0 +1,44 @@
+name: iphone_check_app
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  #check wifi or mobile
+  connectivity_plus: ^2.2.0
+  #get
+  get: ^4.3.8
+  #check network informaion
+  network_info_plus: ^2.1.2
+  #check jailbreak
+  flutter_jailbreak_detection: ^1.8.0
+  #check device info
+  device_info_plus: ^3.2.1
+  rxdart: ^0.27.3
+  flutter_easyloading: ^3.0.3
+
+  #wifi_speed_screen
+  internet_speed_test: ^1.5.0
+  syncfusion_flutter_gauges: ^19.4.47
+  percent_indicator: ^4.0.0
+  fluttertoast: ^8.0.8
+  rflutter_alert: ^2.0.4
+
+  #smart phone page
+  apple_product_name: ^1.0.1
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+flutter:
+  uses-material-design: true

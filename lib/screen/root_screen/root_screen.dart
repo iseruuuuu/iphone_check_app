@@ -23,7 +23,7 @@ class RootScreen extends StatelessWidget {
             return CupertinoPageScaffold(
               child: [
                 const HomeScreen(),
-                const JailBreakScreen()
+                const JailBreakScreen(),
                 const WifiSpeedScreen(),
               ][index],
             );

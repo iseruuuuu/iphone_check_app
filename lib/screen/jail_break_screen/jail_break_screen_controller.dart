@@ -14,10 +14,10 @@ class JailBreakScreenController extends GetxController {
     loadingDialog();
     await Future.delayed(const Duration(seconds: 4));
     if (jailBreak) {
-      //true　脱獄されている。
+      //true 脱獄されている。
       message.value = '脱獄の可能性があります';
     } else {
-      //false　脱獄されていない。
+      //false 脱獄されていない。
       message.value = '問題なし';
     }
   }

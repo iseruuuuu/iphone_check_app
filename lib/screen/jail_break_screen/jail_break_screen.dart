@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iphone_check_app/screen/jail_break_screen/jail_break_screen_controller.dart';
@@ -9,7 +10,12 @@ class JailBreakScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(JailBreakScreenController());
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.indigoAccent),
+      appBar: PreferredSize(
+        preferredSize: Size.zero,
+        child: AppBar(
+          backgroundColor: CupertinoColors.activeBlue,
+        ),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

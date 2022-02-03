@@ -1,12 +1,8 @@
 import 'package:apple_product_name/apple_product_name.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:get/get.dart';
-import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:network_info_plus/network_info_plus.dart';
 
 class HomeScreenController extends GetxController {
-  final info = NetworkInfo();
-  final connectivityResults = ''.obs;
   final infoName = ''.obs;
   final infoModel = ''.obs;
   final infoSystemName = ''.obs;
@@ -16,22 +12,11 @@ class HomeScreenController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    checkWifi();
     checkAppProductName();
   }
 
   void onTap() {
-    checkWifi();
     checkAppProductName();
-  }
-
-  void checkWifi() async {
-    var connectivityResult = await (Connectivity().checkConnectivity());
-    if (connectivityResult == ConnectivityResult.mobile) {
-      connectivityResults.value = connectivityResult.name;
-    } else if (connectivityResult == ConnectivityResult.wifi) {
-      connectivityResults.value = connectivityResult.name;
-    }
   }
 
   void checkAppProductName() async {

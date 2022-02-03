@@ -1,7 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iphone_check_app/component/home/row_text.dart';
-
 import 'home_screen_controller.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,29 +11,16 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = Get.put(HomeScreenController());
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.purpleAccent,
-        title: const Text('端末情報'),
-        actions: [
-          GestureDetector(
-            onTap: controller.onTap,
-            child: const Icon(
-              Icons.refresh,
-              color: Colors.black,
-              size: 30,
-            ),
-          ),
-        ],
+      backgroundColor: CupertinoColors.extraLightBackgroundGray,
+      appBar: PreferredSize(
+        preferredSize: Size.zero,
+        child: AppBar(
+          backgroundColor: CupertinoColors.activeBlue,
+        ),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        //mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Obx(
-            () => RowText(
-              rightText: 'インターネット情報',
-              leftText: controller.connectivityResults.value,
-            ),
-          ),
           Obx(
             () => RowText(
               rightText: 'iOSバージョン',

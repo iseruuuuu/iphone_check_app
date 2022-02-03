@@ -23,10 +23,7 @@ class RootScreen extends StatelessWidget {
             return CupertinoPageScaffold(
               child: [
                 const HomeScreen(),
-                const JailBreakScreen(),
-                //const WifiSpeedScreenFul2(),
-                //const WifiSpeedScreen(),
-                //const WifiSpeedScreenWeb(),
+                const JailBreakScreen()
                 const WifiSpeedScreen(),
               ][index],
             );
@@ -76,12 +73,12 @@ class RootScreen extends StatelessWidget {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.person_outline,
+              Icons.wifi_outlined,
               size: 35.0,
               color: Colors.black,
             ),
             activeIcon: Icon(
-              Icons.person,
+              Icons.wifi,
               size: 35.0,
               color: Colors.black,
             ),

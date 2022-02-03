@@ -4,9 +4,10 @@ import 'package:get/get.dart';
 import 'package:iphone_check_app/screen/home_screen/home_screen.dart';
 import 'package:iphone_check_app/screen/jail_break_screen/jail_break_screen.dart';
 import 'package:iphone_check_app/screen/root_screen/root_screen_controller.dart';
+import 'package:iphone_check_app/_no_use/key/wifi_speed_screensasa.dart';
+import 'package:iphone_check_app/_no_use/key/wifi_speed_screen_ful.dart';
+import 'package:iphone_check_app/_no_use/key/wifi_speed_screen_ful2.dart';
 import 'package:iphone_check_app/screen/wifi_speed_screen/wifi_speed_screen.dart';
-import 'package:iphone_check_app/screen/wifi_speed_screen/wifi_speed_screen_ful.dart';
-import 'package:iphone_check_app/screen/wifi_speed_screen/wifi_speed_screen_ful2.dart';
 
 class RootScreen extends StatelessWidget {
   const RootScreen({Key? key}) : super(key: key);
@@ -24,6 +25,8 @@ class RootScreen extends StatelessWidget {
                 const HomeScreen(),
                 const JailBreakScreen(),
                 //const WifiSpeedScreenFul2(),
+                //const WifiSpeedScreen(),
+                //const WifiSpeedScreenWeb(),
                 const WifiSpeedScreen(),
               ][index],
             );

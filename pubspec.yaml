@@ -14,8 +14,6 @@ dependencies:
   connectivity_plus: ^2.2.0
   #get
   get: ^4.3.8
-  #check network informaion
-  network_info_plus: ^2.1.2
   #check jailbreak
   flutter_jailbreak_detection: ^1.8.0
   #check device info

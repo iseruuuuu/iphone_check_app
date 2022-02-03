@@ -14,8 +14,6 @@ PODS:
     - Toast
   - internet_speed_test (0.0.1):
     - Flutter
-  - network_info_plus (0.0.1):
-    - Flutter
   - ReachabilitySwift (5.0.0)
   - Toast (4.0.0)
   - webview_flutter_wkwebview (0.0.1):
@@ -28,7 +26,6 @@ DEPENDENCIES:
   - flutter_jailbreak_detection (from `.symlinks/plugins/flutter_jailbreak_detection/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - internet_speed_test (from `.symlinks/plugins/internet_speed_test/ios`)
-  - network_info_plus (from `.symlinks/plugins/network_info_plus/ios`)
   - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/ios`)
 
 SPEC REPOS:
@@ -50,8 +47,6 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/fluttertoast/ios"
   internet_speed_test:
     :path: ".symlinks/plugins/internet_speed_test/ios"
-  network_info_plus:
-    :path: ".symlinks/plugins/network_info_plus/ios"
   webview_flutter_wkwebview:
     :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
 
@@ -63,7 +58,6 @@ SPEC CHECKSUMS:
   flutter_jailbreak_detection: f6c01e4bc73641c6b69c5112e50301240601abb4
   fluttertoast: 6122fa75143e992b1d3470f61000f591a798cc58
   internet_speed_test: ab8c9ed9b7b4747c8ebd3f549bdbfa778655fd68
-  network_info_plus: b78876159360f5580608c2cea620d6ceffabd0ad
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   webview_flutter_wkwebview: 005fbd90c888a42c5690919a1527ecc6649e1162
